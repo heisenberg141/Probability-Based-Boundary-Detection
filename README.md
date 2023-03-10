@@ -29,7 +29,7 @@ The gradient measurement is performed to know how much all features distribution
 ## Step 3: Pb-Score
 The gradient maps which are generated are combined with classical edge detectors like Canny and Sobel baselines for weighted average.
 
-<img src="Results/final_output/2.jpg" align="center" alt="DoG" width="250"/>
+<img src="Results/final_output/2.jpg" align="center" alt="output" />
 
 ## Run Instructions
 ```

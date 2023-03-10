@@ -3,7 +3,7 @@
 
 This repository consists of comparison of baseline edge detection algorithms like Canny and Sobel with [Probability of boundary detection algorithm](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/amfm_pami2010.pdf). A simpler version of PB algorithm has been implemented which considers texture, color and intensity discontinuities. This algorithm predicts per pixel probability of the boundary detected. The original image and the output of implementation is shown below:
 
-<img src="BSDS500/Images/10.jpg" align="center" alt="Original" width="400"/> <img src="Results/color_gradient_maps/2.jpg" align="center" alt="PBLite" width="400"/>
+<img src="BSDS500/Images/10.jpg" align="center" alt="Original" width="400"/> <img src="Results/color_gradient_maps/10.jpg" align="center" alt="PBLite" width="400"/>
 
 The algorithm of PBLite detection is shown below:
 
@@ -20,16 +20,16 @@ The filter banks implemented for low-level feature extraction are Oriented Deriv
 Filter banks can be used for extraction of texture properties but here all the three filter banks are combined which results into vector of filter responses. As filter response vectors are generated, they are clustered together using k-means clustering. For Texton Maps k = 64 is used; Color and Brightness Maps k= 16 is used.
 
 
-<img src="Results/texture_maps/2.jpg" align="center" alt="DoG" width="250"/> <img src="Results/color_maps/2.jpg" align="center" alt="PBLite" width="250"/> <img src="Results/intensity_maps/2.jpg" align="center" alt="PBLite" width="250"/>
+<img src="Results/texture_maps/10.jpg" align="center" alt="DoG" width="250"/> <img src="Results/color_maps/10.jpg" align="center" alt="PBLite" width="250"/> <img src="Results/intensity_maps/10.jpg" align="center" alt="PBLite" width="250"/>
 
 The gradient measurement is performed to know how much all features distribution is changing at a given pixel. For this purpose, half-disc masks are used.
 
-<img src="Results/texture_gradient_maps/2.jpg" align="center" alt="PBLite" width="250"/> <img src="Results/color_gradient_maps/2.jpg" align="center" alt="PBLite" width="250"/> <img src="Results/intensity_gradient_maps/2.jpg" align="center" alt="PBLite" width="250"/>
+<img src="Results/texture_gradient_maps/10.jpg" align="center" alt="PBLite" width="250"/> <img src="Results/color_gradient_maps/10.jpg" align="center" alt="PBLite" width="250"/> <img src="Results/intensity_gradient_maps/10.jpg" align="center" alt="PBLite" width="250"/>
 
 ## Step 3: Pb-Score
 The gradient maps which are generated are combined with classical edge detectors like Canny and Sobel baselines for weighted average.
 
-<img src="Results/final_output/2.jpg" align="center" alt="output" />
+<img src="Results/final_output/10.jpg" align="center" alt="output" />
 
 ## Run Instructions
 ```
